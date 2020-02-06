@@ -18,7 +18,9 @@ $(document).ready(function(){
   $('.sp-coin').click(function(){
     $('.sp-coin').removeClass('active-coin');
     $(this).addClass('active-coin');
-  })
+  });
+
+  // $('#canvas1').append('<h2>hello</h2>')
 
 }); //Ready function end
 
@@ -36,4 +38,28 @@ function showTable(tableNum) {
   // Highlight selection 100 table
   $('.sel-100 .num-99').removeClass('active-100');
   $(_active100).addClass('active-100');
+}
+
+
+
+function showAlert(){
+  $('.sp-alert').addClass('show-alert');
+}
+function closeAlert() {
+  $('.sp-alert').removeClass('show-alert');
+}
+
+function avoidClick() {
+  $('.table-99').addClass('avoid-clicks');
+  $('.random-outer').addClass('avoid-clicks');
+  $('.table-of-100').addClass('avoid-clicks');
+  $('.table-999 .table-row-99').addClass('avoid-clicks');
+  $('.td-10-outer').addClass('avoid-clicks');
+}
+function enableClick() {
+  $('.table-99').removeClass('avoid-clicks');
+  $('.random-outer').removeClass('avoid-clicks');
+  $('.table-of-100').removeClass('avoid-clicks');
+  $('.table-999 .table-row-99').removeClass('avoid-clicks');
+  $('.td-10-outer').removeClass('avoid-clicks');
 }

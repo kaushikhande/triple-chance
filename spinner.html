@@ -12,7 +12,7 @@
 <body>
 
 <div class="sp-outer">
-  <strong class="HeaderWheelName">Triple Chance</strong>
+  <strong class="HeaderWheelName"></strong>
 
   <section id="sp-header">
     <div class="sp-header-left j-start">
@@ -21,6 +21,11 @@
       </div>
       <div class="sp-header-icon ml-10">
         <a href="#"><img src="img/back.svg"></a>
+      </div>
+    </div>
+    <div class="sp-logo-outer d-flex j-center">
+      <div class="sp-logo-inner">
+        <img src="img/tc_logo.png">
       </div>
     </div>
     <div class="sp-header-right j-end">
@@ -594,13 +599,64 @@
 
       <div class="spinner-holder">
         <!-- Add wheels here -->
-        <canvas id="canvas" class="WheelCanvas" width="200" height="200" style="position: absolute; z-index: 3; top: 307px; left: 583px;"></canvas>
-        <canvas id="canvas1" class="WheelCanvas" width="300" height="300" style="z-index: 2; position: absolute; top: 256px; left: 533px;"></canvas>
-          <canvas id="canvas2" class="WheelCanvas" width="400" height="400" style="
-        z-index: 1; position: absolute;top: 205px; left: 483px;"></canvas>
+    <div class="spinner-sec">
+      <canvas id="canvas" class="WheelCanvas" width="200" height="200" style="position: absolute; z-index: 3;"></canvas>
+      <canvas id="canvas1" class="WheelCanvas" width="300" height="300" style="z-index: 2; position: absolute; "></canvas>
+        <canvas id="canvas2" class="WheelCanvas" width="400" height="400" style="z-index: 1; position: absolute;"></canvas>
+    </div>
       </div>
     </div><!--  sp-spinner-outer -->
 
+
+
+
+<div class="sp-alert">
+  <div class="sp-alert-inner">
+    <div class="sp-alert-msg">This is alert..!</div>
+    <div class="close-alert" onclick="closeAlert()">
+      <img src="img/close.svg">
+    </div>
+  </div>
+</div>
+
+<style>
+@media all and (max-width:1399px){
+  #canvas{
+    top: 100px;
+    left: 57px;
+  }
+  #canvas1{
+    top: 50px;
+    left: 7px;
+  }
+  #canvas2{
+    top: -1px;
+  left: -42px;
+  }
+}
+@media all and (min-width:1400px){
+  #canvas{
+    top: 100px;
+    left: 112px;
+  }
+  #canvas1{
+    top: 49px;
+    left: 62px;
+  }
+  #canvas2{
+    top: 0px;
+    left: 13px;
+  }
+}
+  .spinner-holder{
+    position: relative;
+  }
+  .spinner-sec{
+  position: relative;
+  left:0;
+  }
+}
+</style>
     <div id="sp-999-outer" class="flex-1">
       <div class="sp-99-row j-start d-flex">
         <div class="sp-99-item">
